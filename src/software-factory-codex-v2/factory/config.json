@@ -1,0 +1,25 @@
+{
+  "concurrency": 3,
+  "max_rounds": 3,
+  "base_branch": "main",
+  "merge_method": "merge",
+  "labels": {
+    "queue": "factory",
+    "needs_info": "factory:needs-info",
+    "needs_human": "factory:needs-human"
+  },
+  "routing": {
+    "low":    { "code": null },
+    "medium": { "code": null },
+    "high":   { "code": null }
+  },
+  "surface_reviewers": {
+    "ui": { "ux": null, "ui": null },
+    "security": { "security": null }
+  },
+  "protected_paths": [
+    "factory/checks.sh",
+    "factory/config.json"
+  ],
+  "ports": { "base": 5100, "step": 10 }
+}
